@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+}
+.letter-space {
+    letter-spacing: 3px;
+}
+nav {
+    float: left;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px black;
+    display: flex;
+    padding: 0px 20px;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+    padding: 10px;
+    display: flex;
+}
+nav ul a {
+    padding:0px;
+    margin:0px;
+}
+nav li {
+    list-style-type: none;
+    padding:10px 20px;
+} 
+
+nav a {
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+nav a h3 {
+    font-weight: 300;
+}
+nav a:hover , li:hover {
+    background-color: rgb(207, 205, 205);
+    cursor: pointer;
+}
+
+.head-image {
+    height: 770px;
+    position: relative;
+    width: 100%;
+}
+.head-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.head-image h1 {
+    position: absolute;
+    top:50%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.head-image span {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+
+.projects {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 0px 20px;
+}
+
+.hr {
+    width: 100%;
+    margin: 0 auto;
+    margin-top:30px;
+    margin-bottom:80px;
+    height: 1px;
+    background-color: rgb(214, 209, 209);
+}
+
+.hr-mini {
+    width: 100%;
+    margin: 0 auto;
+    margin-top:20px;
+    margin-bottom:30px;
+    height: 1px;
+    background-color: rgb(214, 209, 209);
+}
+
+.houses {
+    display:flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.house-detail {
+    width: 24%;
+    position: relative;
+}
+
+.house-detail img {
+    width: 100%;
+}
+
+.house-detail span {
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.about {
+    padding: 0px 20px;
+    margin-top: 110px;
+}
+
+.about h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.about p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 10px 0px;
+}
+
+.about-us {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us-details {
+    width: 25%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    padding: 0px 17px;
+}
+.about-us-details img {
+    width: 100%;
+}
+
+.about-us-details h3 {
+    padding-top: 30px;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.about-us-details p {
+    font-size: 20px;
+    color: gray;
+    padding:25px 0px;
+}
+.about-us-details button {
+    width: 100%;
+    background-color: rgb(237, 233, 233);
+    margin-top: 30px;
+    padding:12px;
+    font-size:15px;
+    font-weight: bold;
+    border: none;
+}
+
+.about-us-details button:hover {
+    background-color:rgb(183, 179, 179);
+    cursor: pointer;
+}
+
+.contact {
+    margin-top:110px;
+    padding: 0px 40px;
+}
+
+.contact h3 {
+    font-size: 30px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact form {
+    margin-top: 30px;
+}
+.contact input {
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    margin: 10px 0px;
+}
+
+.contact form button {
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.map {
+    padding: 0px 20px;
+    margin-top: 100px;
+}
+.map img {
+    width: 100%;
+}
+
+footer {
+    margin-top: 10px;
+    background-color: black;
+    width: 100%;
+    font-size: 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+    text-align: center;
+}
+
+footer a {
+    color: gray;
+}
+
+@media screen and (max-width:400px) {
+
+    nav li {
+       display: none;
+    } 
+  
+.head-image {
+    height: 300px;
+}
+
+
+.projects {
+    padding: 0px;
+    text-align: center;
+}
+
+
+.houses {
+    flex-direction: column;
+    text-align: center;
+    padding:0px;
+}
+
+.house-detail {
+    width: 100%;
+    margin: 30px;
+}
+
+.about {
+   text-align: center;
+    margin-top: 70px;
+}
+
+.about-us {
+        flex-direction: column;
+}
+
+.about-us-details {
+    width: 100%;
+}
+
+.about-us-details h3 {
+    padding-top: 20px;
+}
+
+.about-us-details p {
+    padding:20px 0px;
+}
+ 
+.contact {
+    text-align: center;
+}
+.contact form button {
+   width: 100%;
+}
+}
